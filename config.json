@@ -31,9 +31,9 @@
             "serverChan": {
                 "module": "serverChan",
                 /* 是否启用server酱微信推送 */
-                "enable": false,
+                "enable": true,
                 /* 填写server酱旧版SCKEY或新版SendKey */
-                "KEY": "",
+                "KEY":SCT121702Tv "",
                 /* 是否将多个账号的信息合并推送 */
                 "merge": true
             },
@@ -154,7 +154,7 @@
                 "taskName": "发布Mlog",
                 "module": "publishMlog",
                 /* 是否开启任务 */
-                "enable": false,
+                "enable": true,
                 /* 填写歌曲id，随机选取一个，如[65528, 64634] */
                 "songId": [],
                 /* 动态内容，随机选取一个，其中$artist会被替换为歌手名，$song会被替换为歌曲名 */
@@ -186,7 +186,7 @@
             "398000": {
                 "taskName": "发布动态",
                 "module": "publishEvent",
-                "enable": false,
+                "enable": true,
                 /* 自定义要分享的歌单id，用逗号隔开，分享时随机选取一个，若为空，则从每日推荐歌单中随机选取 */
                 "id": [],
                 /* 自定义动态内容，用逗号隔开，分享时随机选取一个 */
@@ -201,9 +201,9 @@
             "396002": {
                 "taskName": "发布主创说",
                 "module": "publishComment",
-                "enable": false,
+                "enable": true,
                 /* []内填写你自己歌曲的id，如有多首用,隔开，随机挑选一首 */
-                "id": [],
+                "id": [1432571594],
                 /* []内填写要发布的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
                     "感谢大家收听"
@@ -227,12 +227,12 @@
             "395002": {
                 "taskName": "回复粉丝私信",
                 "module": "sendPrivateMsg",
-                "enable": false,
+                "enable": true,
                 /* []内填写粉丝的用户id，如有多个用,隔开，随机挑选一个进行回复 */
-                "id": [],
+                "id": [298002323],
                 /* []内填写要回复的内容，如有多个用,隔开，随机挑选一个 */
                 "msg": [
-                    "你好"
+                    "我爱你"
                 ]
             }
         },
@@ -281,6 +281,6 @@
             }
         },
         /* 在网易云音乐中关注作者 */
-        "follow": true
+        "follow": false
     }
 }
